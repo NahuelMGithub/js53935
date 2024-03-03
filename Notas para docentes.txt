@@ -1,0 +1,14 @@
+alumno
+curso
+
+
+
+
+Hice el querySelector y el addEventListener, para que no sean muchas ventanas de golpe, sin que el 
+usuario sepa que está pasando.
+Algo de JS ya sabía, así que recordaba como hacerlo.
+
+
+Respecto a la entrega:
+No use ciclo for, pero el resto de las cosas creo que estan.
+Al final de la ejecucion termina con un cartel de Violation clik .... no tengo idea q es o por que pasa

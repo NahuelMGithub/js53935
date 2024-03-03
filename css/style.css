@@ -1,0 +1,40 @@
+
+
+*{
+    margin: 0;
+}
+
+.main{
+    padding:  25px;
+    background-image: url(../img/mazmorra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.txtBox{
+  
+    width: 600px;
+    height: 300px;
+    border: 2px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+#btnJuga{
+    margin: 25px;
+}
+#btnJugar:hover{
+    background-color: blue;
+    color: white;
+
+}
