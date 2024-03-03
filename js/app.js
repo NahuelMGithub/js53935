@@ -7,8 +7,8 @@
 // ---------------Variables y constantes
 
 // Consulta inicial
-//const nombre = prompt("Cual es tu nombre?");
-let nombre = "jose"
+const nombre = prompt("Cual es tu nombre?");
+
 
 // variable de jugador
 let vida= 100;
@@ -45,7 +45,8 @@ function saludar(name){
 function reglas(){
     accionesDisponibles();
     console.log("Recuerda que solo debes seleccionar el NÚMERO")
-    console.log('Al vencer a un oponente, obtendras un premio y automaticamente te enfrentaras a otro');
+    console.log(`Al vencer a un oponente, obtendras un premio y automaticamente te enfrentaras a otro.
+                Cuando estes lito presiona Comenzar a asdJugar`);
 }
 
 // Esta funcion tiene el objetivo de mostrar al jugador cual es su estado
@@ -69,7 +70,6 @@ function accionesDisponibles(){
     1-Usar un hechizo de Fuego
     2-Curarte con hechizo de Agua
     3 Atacar hechizo de Tierra
-    4-Golpe directo
     4-Consumir una botella de Vida: Recupera 50pts de vida.
     5-Consumir una botella de Mana: Recupera 50pts de mana.
     6-Escapar: Podes simplemente irte corriendo.
@@ -81,7 +81,6 @@ function acciones(){
     1-Usar un hechizo de Fuego
     2-Curarte con hechizo de Agua
     3 Atacar hechizo de Tierra
-    4-Golpe directo
     4-Consumir una botella de Vida: Recupera 50pts de vida.
     5-Consumir una botella de Mana: Recupera 50pts de mana.
     6-Escapar: Podes simplemente irte corriendo.
@@ -122,7 +121,7 @@ function acciones(){
 function magiaDeFuego(){
     if (suficienteMana(15)){
         mana-=15;
-        vidaEnemy-=20;
+        vidaEnemy-=30;
     }   else{
         console.log("No tenes suficiente mana...")
         acciones()
@@ -137,13 +136,13 @@ function magiaDeFuego(){
 function magiaDeAgua(){
     if (suficienteMana(5)){
         mana-=5;
-        vida+=30;
+        vida+=40;
     }   else{
         console.log("No tenes suficiente mana...")
         acciones()
 
     } 
-    console.log("Usaste un  hechizo de agua junto a un poquito de aloe vera, esto regenera en 30 puntos tu salud")
+    console.log("Usaste un  hechizo de agua junto a un poquito de aloe vera, esto regenera en 40 puntos tu salud")
 }
 
 function magiaDeTierra(){
@@ -214,7 +213,7 @@ function ataqueOponente(){
 }
 
 function generarEnemigo(){
-    vidaEnemy = 50;
+    vidaEnemy = 40;
    fuerzaEnemy =15;
 
 }
