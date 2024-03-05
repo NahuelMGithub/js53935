@@ -46,7 +46,7 @@ function reglas(){
     accionesDisponibles();
     console.log("Recuerda que solo debes seleccionar el NÚMERO")
     console.log(`Al vencer a un oponente, obtendras un premio y automaticamente te enfrentaras a otro.
-                Cuando estes lito presiona Comenzar a asdJugar`);
+                Cuando estes lito presiona Comenzar el Botón de Comenzar a Jugar`);
 }
 
 // Esta funcion tiene el objetivo de mostrar al jugador cual es su estado
